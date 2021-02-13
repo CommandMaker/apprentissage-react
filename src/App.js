@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+/* Import de nos composants */
+import Clock from './components/Clock';
+import Incrementer from './components/Incrementer';
+import HomeComponent from './components/HomeComponent';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+Incrementer.defaultProps = {
+  value: 0,
+  step: 1
 }
 
-export default App;
+export default () => {
+  return (
+      <div className="container">
+        <HomeComponent>Command_maker</HomeComponent>
+        <Clock/>
+        <Incrementer start={20} step={10}/>
+        <Incrementer start={10}/>
+      </div>
+  )
+}
