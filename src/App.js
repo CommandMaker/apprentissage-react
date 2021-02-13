@@ -4,6 +4,7 @@ import './App.css';
 import Clock from './components/Clock';
 import Incrementer from './components/Incrementer';
 import HomeComponent from './components/HomeComponent';
+import ManualIncrementer from './components/ManualIncrementer';
 
 Incrementer.defaultProps = {
   value: 0,
@@ -17,6 +18,7 @@ export default () => {
         <Clock/>
         <Incrementer start={20} step={10}/>
         <Incrementer start={10}/>
+        <ManualIncrementer/>
       </div>
   )
 }

@@ -27,6 +27,7 @@ export default class Incrementer extends React.Component {
         return (
             <div>
                 <p>{this.state.value}</p>
+                <button>Pause</button>
             </div>
         );
     }

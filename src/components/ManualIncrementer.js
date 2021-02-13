@@ -9,6 +9,12 @@ export default class ManualIncrementer extends React.Component {
         }
     }
 
+    increment () {
+        this.setState((state, props) => {
+            return {n: state.n + 1}
+        });
+    }
+
     /*
      * When the component is mount
      */
@@ -22,7 +28,8 @@ export default class ManualIncrementer extends React.Component {
     render () {
         return (
             <div>
-
+                Valeur : {this.state.n}
+                <button onClick={this.increment.bind(this)}>Incrémenter</button>
             </div>
         );
     }
