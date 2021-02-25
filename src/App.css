@@ -6,3 +6,11 @@
 button {
   margin-left: 10px;
 }
+
+body {
+  background: #eee;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+

@@ -6,7 +6,7 @@ import HomeComponent from './components/HomeComponent';
 export default () => {
   return (
       <div className="container">
-        <HomeComponent>Command_maker</HomeComponent>
+        <HomeComponent/>
       </div>
   )
 }
