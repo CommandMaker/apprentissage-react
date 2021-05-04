@@ -54,7 +54,7 @@ export default class HomeComponent extends React.Component {
                     <div className="card">
                         <div className="card-content">
 
-                            <h1 className="title is-3">Formulaire d'inscription</h1>
+                            <h3 className="title is-3">Formulaire d'inscription</h3>
 
                             <div className="field">
                                 <label htmlFor="name" className="label">Nom :</label>
